@@ -1,0 +1,8 @@
+services:
+  audit:
+    build: .
+    image: unicode-font-fallback-audit:latest
+    container_name: unicode-font-fallback-audit
+    ports:
+      - "8080:80"
+    restart: unless-stopped
